@@ -669,9 +669,10 @@ DestroyJumpPad(jpadid)
 
 DestroyAllJumpPads()
 {
-	for(new i = 0; i < MAX_JUMP_PADS; i ++) DestroyJumpPad(i);
+	new c;
+	for(new i = 0; i < MAX_JUMP_PADS; i ++) if(DestroyJumpPad(i)) c ++;
 
-	return 1;
+	return c;
 }
 
 // ---------------------------------------------------- // 

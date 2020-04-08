@@ -35,7 +35,7 @@ JUMP_PAD_TYPE_FIND_Z
 
 # Configuration
 
-You define these values before including JumpPads.inc for some customization:
+You can define these values before including JumpPads.inc to change some limits and configuration:
 
 - MAX_JUMP_PADS: Maximum number of Jump Pads.
 

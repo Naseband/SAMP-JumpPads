@@ -32,3 +32,17 @@ JUMP_PAD_TYPE_FIND_Z
 ```DestroyAllJumpPads()```
 
 - Returns amount of destroyed JPads.
+
+# Configuration
+
+You define these values before including JumpPads.inc for some customization:
+
+- MAX_JUMP_PADS: Maximum number of Jump Pads.
+
+- MAX_JUMP_PAD_PATH_LEN: Maximum length of the path. This does not affect the maximum distance a JumpPad can throw players, it rather controls the detail of the path. If you use only short distance pads, a low value like 25 is certainly enough. For longer paths (ie across the whole map) 100 is perfectly fine.
+
+- JUMP_PAD_DEFAULT_SPEED: Default top speed of JumpPads, only used if no speed value is passed to CreateJumpPad.
+
+- JUMP_PAD_MIN_SPEED: Minimum speed if the player is moving horizontally (near the climax of the parabola).
+
+- JUMP_PAD_ANIM_ID: Animation ID that is used during the flight.
